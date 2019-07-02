@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3175E4A-AB50-474C-9F94-4D025DF556D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HastaneSistemi.BLL</RootNamespace>
+    <AssemblyName>HastaneSistemi.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DoktorBLL.cs" />
+    <Compile Include="EczaciBLL.cs" />
+    <Compile Include="HastaBLL.cs" />
+    <Compile Include="HospitalBLL.cs" />
+    <Compile Include="IlacBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandevuBLL.cs" />
+    <Compile Include="RandevuSonucBLL.cs" />
+    <Compile Include="ReceteBLL.cs" />
+    <Compile Include="ReceteDetayBLL.cs" />
+    <Compile Include="SeansBLL.cs" />
+    <Compile Include="TahlilBLL.cs" />
+    <Compile Include="TahlilTurBLL.cs" />
+    <Compile Include="TeshisBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hastane.DAL\HastaneSistemi.DAL.csproj">
+      <Project>{6a15aecc-bf4c-44e2-8942-8077949c6714}</Project>
+      <Name>HastaneSistemi.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hastane.DTO\HastaneSistemi.DTO.csproj">
+      <Project>{6ac913be-5bf3-434f-8b4a-7993d6bcb760}</Project>
+      <Name>HastaneSistemi.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hastane.Entities\HastaneSistemi.Entities.csproj">
+      <Project>{bb0d3fbe-2afa-4b35-ac98-f59c1b65f775}</Project>
+      <Name>HastaneSistemi.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

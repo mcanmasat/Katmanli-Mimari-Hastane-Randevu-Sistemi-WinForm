@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8489A5EE-82F7-492A-B25B-AF169431AF48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hastane.UI.WinForm</RootNamespace>
+    <AssemblyName>Hastane.UI.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconfinder_ambulance_45490.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorGirisEkrani.Designer.cs">
+      <DependentUpon>frmDoktorGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoktorIslemEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoktorIslemEkrani.Designer.cs">
+      <DependentUpon>frmDoktorIslemEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEczaciGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEczaciGirisEkrani.Designer.cs">
+      <DependentUpon>frmEczaciGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEczaciIslemEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEczaciIslemEkrani.Designer.cs">
+      <DependentUpon>frmEczaciIslemEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaRandevuBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaRandevuBilgileri.Designer.cs">
+      <DependentUpon>frmHastaRandevuBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReceteOlusturmaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReceteOlusturmaEkrani.Designer.cs">
+      <DependentUpon>frmReceteOlusturmaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVatandasRandevuEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVatandasRandevuEkrani.Designer.cs">
+      <DependentUpon>frmVatandasRandevuEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVatandasUyelikveGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVatandasUyelikveGirisEkrani.Designer.cs">
+      <DependentUpon>frmVatandasUyelikveGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYeniRandevuAtamaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYeniRandevuAtamaEkrani.Designer.cs">
+      <DependentUpon>frmYeniRandevuAtamaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorGirisEkrani.resx">
+      <DependentUpon>frmDoktorGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoktorIslemEkrani.resx">
+      <DependentUpon>frmDoktorIslemEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEczaciGirisEkrani.resx">
+      <DependentUpon>frmEczaciGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEczaciIslemEkrani.resx">
+      <DependentUpon>frmEczaciIslemEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaRandevuBilgileri.resx">
+      <DependentUpon>frmHastaRandevuBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReceteOlusturmaEkrani.resx">
+      <DependentUpon>frmReceteOlusturmaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVatandasRandevuEkrani.resx">
+      <DependentUpon>frmVatandasRandevuEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVatandasUyelikveGirisEkrani.resx">
+      <DependentUpon>frmVatandasUyelikveGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYeniRandevuAtamaEkrani.resx">
+      <DependentUpon>frmYeniRandevuAtamaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hastane.DTO\HastaneSistemi.DTO.csproj">
+      <Project>{6ac913be-5bf3-434f-8b4a-7993d6bcb760}</Project>
+      <Name>HastaneSistemi.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hastane.Entities\HastaneSistemi.Entities.csproj">
+      <Project>{bb0d3fbe-2afa-4b35-ac98-f59c1b65f775}</Project>
+      <Name>HastaneSistemi.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HastaneSistemi.BLL\HastaneSistemi.BLL.csproj">
+      <Project>{d3175e4a-ab50-474c-9f94-4d025df556d1}</Project>
+      <Name>HastaneSistemi.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconfinder_ambulance_45490.ico" />
+    <Content Include="Images\iconfinder_11_-_Valid_1815560 %281%29.png" />
+    <Content Include="Images\iconfinder_12_-_Plus_1815561 %281%29.png" />
+    <Content Include="Images\iconfinder_ambulance_45490.ico" />
+    <Content Include="Images\iconfinder_calendar-event-planning_2932351.ico" />
+    <Content Include="Images\iconfinder_Delete_1493279.png" />
+    <Content Include="Images\iconfinder_doctor_63121.ico" />
+    <Content Include="Images\iconfinder_doctor_63121.png" />
+    <Content Include="Images\iconfinder_JD-27_2246843.png" />
+    <Content Include="Images\iconfinder_Login Manager_3503.ico" />
+    <Content Include="Images\iconfinder_Login Manager_3503.png" />
+    <Content Include="Images\iconfinder_login_59378.png" />
+    <Content Include="Images\iconfinder_Pharmacist_Female_Light_80878 %282%29.png" />
+    <Content Include="Images\iconfinder_Pharmacist_Female_Light_80878.ico" />
+    <Content Include="Images\iconfinder_Search_3213447 %281%29.png" />
+    <Content Include="Images\iconfinder_Search_3213447.png" />
+    <Content Include="Images\iconfinder_Syrup_2415599 %281%29.png" />
+    <Content Include="Images\iconfinder__3ui_2303108.ico" />
+    <Content Include="Images\iconfinder__3ui_2303108.png" />
+    <Content Include="Images\images.png" />
+    <Content Include="Images\saglik-bakanligi-logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
